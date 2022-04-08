@@ -1,0 +1,17 @@
+﻿
+@page
+
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+
+
+<h1>Session</h1>
+
+<h1>@HttpContextAccessor.HttpContext.Session.GetString("S_Name")</h1>
+
+
+
+
+@*<h1>======session======</h1>
+<h1>@ViewBag.Session</h1>*@
